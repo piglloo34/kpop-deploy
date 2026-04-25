@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="K-POP의 역사, 세대별 흐름, 그리고 2026년 최신 트렌드까지. 대한민국 대중음악의 모든 것을 만나보세요.">
+    <title>K-POP INFINITY | Global Sensation</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        kblue: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        },
+                        kpurple: '#7000ff',
+                        kpink: '#ff007a',
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 6s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(60px);
+            -webkit-backdrop-filter: blur(60px);
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            box-shadow: 0 15px 50px -10px rgba(0, 0, 0, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #0891b2, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-blob {
+            filter: blur(100px);
+            opacity: 0.4;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 antialiased selection:bg-cyan-500 selection:text-white overflow-x-hidden">
+    
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 glass-panel py-4 transition-all duration-300">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="South Korea Flag" class="w-8 h-auto shadow-sm rounded-sm">
+                <a href="#" class="text-2xl font-black tracking-tighter text-gradient">K-POP INFINITY</a>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-bold tracking-wide text-slate-600">
+                <a href="#hero" class="hover:text-cyan-600 transition-colors">HOME</a>
+                <a href="#history" class="hover:text-cyan-600 transition-colors">HISTORY</a>
+                <a href="#trends" class="hover:text-cyan-600 transition-colors">TRENDS</a>
+                <a href="#groups" class="hover:text-cyan-600 transition-colors">GROUPS</a>
+            </div>
+            <a href="#trends" class="bg-slate-900 hover:bg-cyan-600 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all shadow-lg shadow-slate-900/20">LATEST NEWS</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute top-[-10%] left-[-10%] w-[50%] h-[50%] bg-cyan-200/50 rounded-full hero-blob animate-pulse-slow"></div>
+            <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-purple-200/50 rounded-full hero-blob animate-pulse-slow" style="animation-delay: -4s"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 mb-8 glass-panel rounded-full animate-float">
+                <span class="w-2 h-2 bg-cyan-500 rounded-full animate-ping"></span>
+                <span class="text-xs font-bold tracking-widest text-cyan-700 uppercase italic">K-POP Era 2026: Return of the Legends</span>
+            </div>
+            <h1 class="text-7xl md:text-9xl font-black tracking-tighter leading-[0.9] mb-8 text-slate-900">
+                GLOBAL <br> <span class="text-gradient">SENSATION</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-xl md:text-2xl text-slate-600 mb-12 leading-relaxed font-medium">
+                대한민국의 에너지가 세계의 기준이 되다. <br>
+                위키피디아로 보는 역사부터 2026년 최신 트렌드까지 한눈에 확인하세요.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="#history" class="w-full sm:w-auto px-10 py-5 bg-slate-900 text-white rounded-3xl font-black text-lg hover:bg-cyan-600 hover:scale-105 transition-all shadow-2xl shadow-slate-900/30">역사 탐험하기</a>
+                <a href="#trends" class="w-full sm:w-auto px-10 py-5 glass-panel rounded-3xl font-black text-lg hover:bg-white transition-all border-2 border-white">2026 트렌드 뉴스</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section (Wikipedia Based) -->
+    <section id="history" class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <span class="text-cyan-600 font-black tracking-[0.3em] uppercase text-xs">Chronicle</span>
+                <h2 class="text-5xl font-black text-slate-900 tracking-tighter mt-4">THE HISTORY OF K-POP</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 1st Gen -->
+                <div class="p-8 rounded-[40px] glass-panel border-cyan-100 hover:bg-cyan-50 transition-colors group">
+                    <div class="text-4xl font-black text-cyan-200 mb-6 group-hover:text-cyan-400 transition-colors">1ST GEN</div>
+                    <h3 class="text-xl font-bold mb-4">1990s: 시초와 태동</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">서태지와 아이들의 등장 이후 H.O.T., S.E.S. 등 아이돌 문화의 기틀이 마련된 시기입니다.</p>
+                </div>
+                <!-- 2nd Gen -->
+                <div class="p-8 rounded-[40px] glass-panel border-purple-100 hover:bg-purple-50 transition-colors group">
+                    <div class="text-4xl font-black text-purple-200 mb-6 group-hover:text-purple-400 transition-colors">2ND GEN</div>
+                    <h3 class="text-xl font-bold mb-4">2000s: 글로벌 진출</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">동방신기, 빅뱅, 소녀시대 등이 활약하며 아시아를 넘어 세계 시장의 가능성을 확인했습니다.</p>
+                </div>
+                <!-- 3rd Gen -->
+                <div class="p-8 rounded-[40px] glass-panel border-blue-100 hover:bg-blue-50 transition-colors group">
+                    <div class="text-4xl font-black text-blue-200 mb-6 group-hover:text-blue-400 transition-colors">3RD GEN</div>
+                    <h3 class="text-xl font-bold mb-4">2010s: 주류로의 격상</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">BTS, 블랙핑크가 글로벌 차트를 휩쓸며 K-POP을 세계적인 주류 장르로 정착시켰습니다.</p>
+                </div>
+                <!-- 4th Gen -->
+                <div class="p-8 rounded-[40px] glass-panel border-pink-100 hover:bg-pink-50 transition-colors group">
+                    <div class="text-4xl font-black text-pink-200 mb-6 group-hover:text-pink-400 transition-colors">4TH GEN</div>
+                    <h3 class="text-xl font-bold mb-4">2020s: 뉴 패러다임</h3>
+                    <p class="text-sm text-slate-500 leading-relaxed font-medium">뉴진스, 에스파 등 독창적인 컨셉과 글로벌 타겟팅으로 새로운 시대를 열어가고 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trends & News Section (2026 Focus) -->
+    <section id="trends" class="py-32 bg-slate-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+                    <div class="w-full md:w-1/2">
+                        <div class="inline-block px-4 py-1 bg-slate-900 text-white rounded-full text-xs font-black tracking-widest mb-4">2026 TRENDS</div>
+                        <h2 class="text-5xl font-black text-slate-900 leading-tight tracking-tighter mb-8">
+                            슈퍼팬의 시대, <br> <span class="text-gradient">전설들의 귀환</span>
+                        </h2>
+                        <ul class="space-y-6">
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600 font-bold mt-1">1</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">완전체 컴백 러시</h4>
+                                    <p class="text-sm text-slate-500">BTS 군백기 종료 및 블랙핑크 데뷔 10주년 활동으로 3세대 레전드들의 대대적인 귀환이 예고됩니다.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-purple-100 flex items-center justify-center text-purple-600 font-bold mt-1">2</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">슈퍼팬 기반의 가치 소비</h4>
+                                    <p class="text-sm text-slate-500">단순 앨범 판매 수치를 넘어 팬들과의 깊은 유대감을 통한 고부가가치 IP 전략이 산업의 핵심이 되었습니다.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-4">
+                                <div class="w-6 h-6 rounded-full bg-pink-100 flex items-center justify-center text-pink-600 font-bold mt-1">3</div>
+                                <div>
+                                    <h4 class="font-bold text-slate-900">몰입형 테크 콘텐츠</h4>
+                                    <p class="text-sm text-slate-500">AR/VR 기술을 접목한 대화형 음악 영상과 초개인화된 팬 경험이 새로운 음악 소비 트렌드로 정착했습니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="h-80 rounded-[40px] overflow-hidden shadow-2xl animate-float">
+                            <img src="assets/kpop_hero_bg_1777097346297.png" class="w-full h-full object-cover">
+                        </div>
+                        <div class="h-80 rounded-[40px] overflow-hidden shadow-2xl animate-float" style="animation-delay: -3s; margin-top: 40px;">
+                            <img src="assets/kpop_fandom_blue_1777098194759.png" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Groups Section -->
+    <section id="groups" class="py-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl font-black text-slate-900 tracking-tighter italic underline decoration-cyan-300">FEATURED ARTISTS</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Cards same as before but refined -->
+                <div class="group relative overflow-hidden rounded-[48px] glass-panel transition-all hover:-translate-y-4 shadow-xl border-2 border-white">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img src="assets/kpop_girl_group_1777097360385.png" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-2xl font-black text-slate-900 mb-2">GIRLS REVOLUTION</h3>
+                        <p class="text-sm text-slate-500 mb-6 font-medium italic">Empowering icons of the 4th generation.</p>
+                        <button class="px-6 py-2 bg-slate-900 text-white rounded-full font-bold text-xs">MORE INFO</button>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-[48px] glass-panel transition-all hover:-translate-y-4 shadow-xl border-2 border-white">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img src="assets/kpop_boy_group_1777097389842.png" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-2xl font-black text-slate-900 mb-2">K-HEROES</h3>
+                        <p class="text-sm text-slate-500 mb-6 font-medium italic">Redefining performance standards.</p>
+                        <button class="px-6 py-2 bg-slate-900 text-white rounded-full font-bold text-xs">MORE INFO</button>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-[48px] glass-panel transition-all hover:-translate-y-4 shadow-xl border-2 border-white">
+                    <div class="h-[400px] overflow-hidden relative">
+                        <img src="assets/kpop_fandom_blue_1777098194759.png" class="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <h3 class="text-2xl font-black text-slate-900 mb-2">SUPERFANS</h3>
+                        <p class="text-sm text-slate-500 mb-6 font-medium italic">The engine behind the K-POP evolution.</p>
+                        <button class="px-6 py-2 bg-slate-900 text-white rounded-full font-bold text-xs">MORE INFO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-32 bg-white border-t border-slate-100">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center mb-10">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" alt="South Korea Flag" class="w-12 h-auto">
+            </div>
+            <h2 class="text-4xl font-black tracking-tighter text-gradient mb-10">K-POP INFINITY</h2>
+            <div class="flex flex-wrap justify-center gap-12 mb-12 text-sm text-slate-500 font-black uppercase tracking-widest">
+                <a href="#" class="hover:text-cyan-600 transition-colors">History</a>
+                <a href="#" class="hover:text-cyan-600 transition-colors">Trends</a>
+                <a href="#" class="hover:text-cyan-600 transition-colors">Wikipedia</a>
+                <a href="#" class="hover:text-cyan-600 transition-colors">News</a>
+            </div>
+            <p class="text-xs text-slate-400 font-bold tracking-[0.4em] uppercase">&copy; 2026 K-POP INFINITY. ALL CONTENT BASED ON WIKIPEDIA & LATEST NEWS.</p>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('py-2', 'shadow-2xl', 'shadow-slate-200/50');
+                nav.classList.remove('py-4');
+            } else {
+                nav.classList.add('py-4');
+                nav.classList.remove('py-2', 'shadow-2xl', 'shadow-slate-200/50');
+            }
+        });
+    </script>
+</body>
+</html>
